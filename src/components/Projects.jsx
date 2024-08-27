@@ -1,6 +1,7 @@
 import React from "react";
 import employeeMSImage from "../assets/employee-ms.png";
 import bookMSImage from "../assets/admin-dashboard.png";
+import qr from "../assets/qr.png";
 
 const projects = [
   {
@@ -9,20 +10,23 @@ const projects = [
     technologies: "MERN Stack",
     image: employeeMSImage,
     github: "https://github.com/ruthrapathi-murugan",
+    netlify:"https://ruthrapathi-info.netlify.app/",
   },
   {
     id: 2,
     name: "Blog App",
     technologies: "MERN Stack",
     image: bookMSImage,
-    github: "https://github.com/YouafKhan1",
+    github: "https://github.com/Ruthrapathi-murugan/day-12-task",
+    netlify:"https://kazinazrulislamblogs.netlify.app/",
   },
   {
     id: 3,
-    name: "Book MS",
+    name: "QR-GENERATOR",
     technologies: "MERN Stack",
-    image: employeeMSImage,
-    github: "https://github.com/YouafKhan1",
+    image: qr,
+    github: "https://github.com/Ruthrapathi-murugan/QR-code-Generator",
+    netlify:"https://qr-codegenerater.netlify.app/",
   },
 ];
 
@@ -42,6 +46,9 @@ const Projects = () => {
               <a href={project.github} className="inline-block bg-gradient-to-r 
               from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
               rel="noopener noreferrer">GitHub</a>
+              <a href={project.netlify} className="inline-block bg-gradient-to-r 
+              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
+              rel="noopener noreferrer">Netlify</a>
             </div>
           ))}
         </div>

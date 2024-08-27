@@ -5,6 +5,8 @@ import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
+import Education from './components/Education.jsx'
+import ConnectMe from './components/ConnectMe.jsx'
 
 function App() {
  
@@ -12,7 +14,10 @@ function App() {
   return (
     <>
       <Navbar/>
+   
       <Hero/>
+      <ConnectMe/>
+      <Education/>
       <About/>
       <Service/>
       <Projects/>
