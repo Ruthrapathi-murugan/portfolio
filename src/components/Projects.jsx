@@ -9,9 +9,9 @@ const projects = [
     name: "Employee MS",
     technologies: "MERN Stack",
     image: employeeMSImage,
-    github: "https://github.com/ruthrapathi-murugan",
-    netlify:"https://ruthrapathi-info.netlify.app/",
-  },
+    github: "https://github.com/Ruthrapathi-murugan/Frontend-HrManagement-Dashboard",
+    netlify:"https://boisterous-bienenstitch-2fcc86.netlify.app/",
+  },  
   {
     id: 2,
     name: "Blog App",
