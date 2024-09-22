@@ -1,7 +1,7 @@
 import React from "react";
 import employeeMSImage from "../assets/employee-ms.png";
-import bookMSImage from "../assets/admin-dashboard.png";
 import qr from "../assets/qr.png";
+import travels from "../assets/travels.jpg";
 
 const projects = [
   {
@@ -14,19 +14,19 @@ const projects = [
   },  
   {
     id: 2,
-    name: "Blog App",
-    technologies: "MERN Stack",
-    image: bookMSImage,
-    github: "https://github.com/Ruthrapathi-murugan/day-12-task",
-    netlify:"https://kazinazrulislamblogs.netlify.app/",
-  },
-  {
-    id: 3,
     name: "QR-GENERATOR",
     technologies: "MERN Stack",
     image: qr,
     github: "https://github.com/Ruthrapathi-murugan/QR-code-Generator",
     netlify:"https://qr-codegenerater.netlify.app/",
+  },
+  {
+    id: 3,
+    name: "TRAVELS",
+    technologies: "MERN Stack",
+    image: travels,
+    github: "https://github.com/Ruthrapathi-murugan/nakshatra-travels",
+    netlify:"https://nakshatra-travels.netlify.app/",
   },
 ];
 
