@@ -7,6 +7,7 @@ import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import Education from './components/Education.jsx'
 import ConnectMe from './components/ConnectMe.jsx'
+import Skills from './components/Skills.jsx'
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
       <Hero/>
       <ConnectMe/>
       <Education/>
+      <Skills/>
       <About/>
       <Service/>
       <Projects/>
