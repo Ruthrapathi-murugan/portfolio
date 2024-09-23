@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // For navigation
 import employeeMSImage from "../assets/employee-ms.png";
 import qr from "../assets/qr.png";
 import travels from "../assets/travels.jpg";
@@ -10,23 +11,23 @@ const projects = [
     technologies: "MERN Stack",
     image: employeeMSImage,
     github: "https://github.com/Ruthrapathi-murugan/Frontend-HrManagement-Dashboard",
-    netlify:"https://boisterous-bienenstitch-2fcc86.netlify.app/",
-  },  
+    netlify: "https://boisterous-bienenstitch-2fcc86.netlify.app/",
+  },
   {
     id: 2,
     name: "QR-GENERATOR",
-    technologies: "MERN Stack",
+    technologies: "REACT JS",
     image: qr,
     github: "https://github.com/Ruthrapathi-murugan/QR-code-Generator",
-    netlify:"https://qr-codegenerater.netlify.app/",
+    netlify: "https://qr-codegenerater.netlify.app/",
   },
   {
     id: 3,
     name: "TRAVELS",
-    technologies: "MERN Stack",
+    technologies: "REACT JS",
     image: travels,
     github: "https://github.com/Ruthrapathi-murugan/nakshatra-travels",
-    netlify:"https://nakshatra-travels.netlify.app/",
+    netlify: "https://nakshatra-travels.netlify.app/",
   },
 ];
 
@@ -37,20 +38,46 @@ const Projects = () => {
         <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <div key={project.id} className="bg-gray-800 p-6 rounded-lg hover:shadow-lg 
-            transform transition-transform duration-300 hover:scale-105">
-              <img src={project.image} alt={project.name} className="rounded-lg mb-4 
-              w-full h-48 object-cover" />
+            <div
+              key={project.id}
+              className="bg-gray-800 p-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105"
+            >
+              <img
+                src={project.image}
+                alt={project.name}
+                className="rounded-lg mb-4 w-full h-48 object-cover"
+              />
               <h3 className="text-2xl font-bold mb-2">{project.name}</h3>
               <p className="text-gray-400 mb-4">{project.technologies}</p>
-              <a href={project.github} className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
-              rel="noopener noreferrer">GitHub</a>
-              <a href={project.netlify} className="inline-block bg-gradient-to-r 
-              from-green-400 to-blue-500 text-white px-4 py-2 rounded-full" target="_blank" 
-              rel="noopener noreferrer">Netlify</a>
+              <a
+                href={project.github}
+                className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full mr-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href={project.netlify}
+                className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Netlify
+              </a>
             </div>
           ))}
+        </div>
+
+        {/* More Projects Button */}
+        <div className="text-center mt-12">
+          <Link to="/more-projects">
+            <button
+              className="bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-3 rounded-full hover:scale-105 transform transition-transform duration-300"
+            >
+              View More Projects
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-scroll'; // Import from react-scroll
 
 const Navbar = () => {
   return (
@@ -6,21 +7,72 @@ const Navbar = () => {
       <div className='container py-2 flex justify-center md:justify-between items-center'>
         <div className='text-2xl font-bold hidden md:inline'>Ruthrapathi-Murugan</div>
         <div className='space-x-6'>
-          <a href="#home" className='hover:text-gray-400'>Home</a>
-          <a href="#education" className='hover:text-gray-400'>My Education</a>
-          <a href="#skills" className='hover:text-gray-400'>My Skills</a>
-          <a href="#about" className='hover:text-gray-400'>About Me</a>
-          <a href="#service" className='hover:text-gray-400'>Services</a>
-          <a href="#project" className='hover:text-gray-400'>Projects</a>
-          <a href="#contact" className='hover:text-gray-400'>Contact</a>
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className='hover:text-gray-400 cursor-pointer'
+          >
+            Home
+          </Link>
+          <Link
+            to="education"
+            smooth={true}
+            duration={500}
+            className='hover:text-gray-400 cursor-pointer'
+          >
+            My Education
+          </Link>
+          <Link
+            to="skills"
+            smooth={true}
+            duration={500}
+            className='hover:text-gray-400 cursor-pointer'
+          >
+            My Skills
+          </Link>
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            className='hover:text-gray-400 cursor-pointer'
+          >
+            About Me
+          </Link>
+          <Link
+            to="service"
+            smooth={true}
+            duration={500}
+            className='hover:text-gray-400 cursor-pointer'
+          >
+            Services
+          </Link>
+          <Link
+            to="project"
+            smooth={true}
+            duration={500}
+            className='hover:text-gray-400 cursor-pointer'
+          >
+            Projects
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            className='hover:text-gray-400 cursor-pointer'
+          >
+            Contact
+          </Link>
         </div>
-        <a  
-          href="#connectme" 
+        <Link  
+          to="connectme" 
+          smooth={true}
+          duration={500}
           className='bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline
-          transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'
+          transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full cursor-pointer'
         >
           Connect Me
-        </a>
+        </Link>
       </div>
     </nav>
   );
