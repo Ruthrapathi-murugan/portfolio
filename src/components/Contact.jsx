@@ -20,7 +20,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/contact', formData);
+      const res = await axios.post('https://portfolio-backend-v0qc.onrender.com/api/contact', formData);
       if (res.status === 200) {
         setSuccess(true);
         setFormData({ name: '', email: '', message: '' });
