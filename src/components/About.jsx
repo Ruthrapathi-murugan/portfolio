@@ -1,81 +1,73 @@
 import React from "react";
+import { FaUserGraduate, FaMapMarkerAlt, FaGlobe, FaBirthdayCake } from 'react-icons/fa'; // Importing icons
 import AboutImage from "../assets/aboutme-image.png";
 
 const About = () => {
   return (
-    <div className="bg-black text-white py-20" id="about">
+    <div className="bg-gradient-to-b from-gray-900 to-black text-white py-20" id="about">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
+        <h2 className="text-5xl font-bold text-center mb-12 tracking-wide">
+          About <span className="text-indigo-500">Me</span>
+        </h2>
+
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <img
             src={AboutImage}
-            alt=""
-            className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
+            alt="About Me"
+            className="w-72 h-80 rounded-full object-cover mb-8 md:mb-0 shadow-lg hover:scale-105 transform transition-transform duration-300"
           />
-          <div className="flex-1">
-            <p className="text-lg mb-8">
-              I am a passionate full-stack developer with a focus on building
-              modern and responsive web applications. With a strong foundation
-              in both frontend and backend technologies, I strive to create
-              seamless and efficient user experiences.
-            </p>
-            <div className="space-y-4">
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  HTML & CSS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-10/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  React JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-11/12"
-                  ></div>
-                </div>
-              </div>
-              <div className="flex items-center">
-                <label htmlFor="htmlandcss" className="w-2/12">
-                  Node JS
-                </label>
-                <div className="grow bg-gray-800 rounded-full h-2.5">
-                  <div
-                    className="bg-gradient-to-r from-green-400 to-blue-500 h-2.5 rounded-full 
-                    transform transition-transform duration-300 hover:scale-105 w-9/12"
-                  ></div>
+
+          <div className="flex-1 text-lg leading-relaxed space-y-8">
+            {/* Category: Born */}
+            <div className="bg-gray-800 p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+              <div className="flex items-center space-x-4">
+                <FaBirthdayCake className="text-indigo-500 text-3xl" />
+                <div>
+                  <p className="text-sm text-gray-400">Born</p>
+                  <p className="text-xl font-semibold">June 7, 1993</p>
                 </div>
               </div>
             </div>
-            <div className="mt-12 flex justify-between text-center">
+
+            {/* Category: Education */}
+            <div className="bg-gray-800 p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+              <div className="flex items-center space-x-4">
+                <FaUserGraduate className="text-indigo-500 text-3xl" />
                 <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        1
-                    </h3>
-                    <p>Years Experience</p>
+                  <p className="text-sm text-gray-400">Education</p>
+                  <p className="text-xl font-semibold">Bachelor of Engineering in Computer Science</p>
                 </div>
+              </div>
+            </div>
+
+            {/* Category: Location */}
+            <div className="bg-gray-800 p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+              <div className="flex items-center space-x-4">
+                <FaMapMarkerAlt className="text-indigo-500 text-3xl" />
                 <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        10+
-                    </h3>
-                    <p>Projects Completed</p>
+                  <p className="text-sm text-gray-400">Location</p>
+                  <p className="text-xl font-semibold">Bangalore</p>
                 </div>
+              </div>
+            </div>
+
+            {/* Category: Languages Known */}
+            <div className="bg-gray-800 p-4 rounded-lg shadow hover:shadow-lg transition duration-300 transform hover:scale-105">
+              <div className="flex items-center space-x-4">
+                <FaGlobe className="text-indigo-500 text-3xl" />
                 <div>
-                    <h3 className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-400 to-blue-500">
-                        1
-                    </h3>
-                    <p>Happy Clients</p>
+                  <p className="text-sm text-gray-400">Languages Known</p>
+                  <p className="text-xl font-semibold">English, Tamil, Malayalam</p>
                 </div>
+              </div>
+            </div>
+
+            {/* About description */}
+            <div className="mt-6">
+              <p className="text-lg leading-relaxed">
+                I'm a full-stack developer with a passion for building dynamic and modern web applications. 
+                I love tackling challenges and learning new technologies to keep up with the ever-evolving web development landscape.
+              </p>
             </div>
           </div>
         </div>
