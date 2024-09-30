@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"; // For navigation
 import employeeMSImage from "../assets/employee-ms.png";
 import qr from "../assets/qr.png";
-import travels from "../assets/travels.jpg";
+import travels from "../assets/3bed.jpg";
 
 const projects = [
   {
@@ -15,11 +15,11 @@ const projects = [
   },
   {
     id: 2,
-    name: "QR-GENERATOR",
+    name: "Hotel Website",
     technologies: "REACT JS",
     image: qr,
-    github: "https://github.com/Ruthrapathi-murugan/QR-code-Generator",
-    netlify: "https://qr-codegenerater.netlify.app/",
+    github: "https://github.com/Ruthrapathi-murugan/sampath-residency",
+    netlify: "https://sampathresidency.netlify.app/",
   },
   {
     id: 3,

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"; 
 import project1Image from "../assets/blog.jpg";
 import project2Image from "../assets/calculator.jpeg";
+import qrc from "../assets/qr.png"
 
 const moreProjects = [
   {
@@ -19,6 +20,14 @@ const moreProjects = [
     image: project2Image,
     github: "https://github.com/Ruthrapathi-murugan/calculator-task",
     netlify: "https://ruthracalculator.netlify.app/",
+  },
+  {
+    id: 6,  
+    name: "Project 6",
+    technologies: "React, Express",
+    image: qrc,
+    github: "https://github.com/Ruthrapathi-murugan/QR-code-Generator",
+    netlify: "https://qr-codegenerater.netlify.app/",
   },
   // Add more projects here
 ];
