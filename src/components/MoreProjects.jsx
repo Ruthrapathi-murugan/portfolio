@@ -7,7 +7,7 @@ import qrc from "../assets/qr.png"
 const moreProjects = [
   {
     id: 4,
-    name: "Project 4",
+    name: "Routing Project",
     technologies: "React, Node.js",
     image: project1Image,
     github: "https://github.com/Ruthrapathi-murugan/react-router",
@@ -15,7 +15,7 @@ const moreProjects = [
   },
   {
     id: 5,  
-    name: "Project 5",
+    name: "Calculator",
     technologies: "React, Express",
     image: project2Image,
     github: "https://github.com/Ruthrapathi-murugan/calculator-task",
@@ -23,7 +23,7 @@ const moreProjects = [
   },
   {
     id: 6,  
-    name: "Project 6",
+    name: "Qr code Generator",
     technologies: "React, Express",
     image: qrc,
     github: "https://github.com/Ruthrapathi-murugan/QR-code-Generator",

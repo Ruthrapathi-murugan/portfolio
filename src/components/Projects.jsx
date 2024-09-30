@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom"; // For navigation
 import employeeMSImage from "../assets/employee-ms.png";
-import qr from "../assets/qr.png";
-import travels from "../assets/3bed.jpg";
+import qr from "../assets/3bed.jpg";
+import travels from "../assets/travels.jpg";
 
 const projects = [
   {
