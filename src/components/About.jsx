@@ -1,6 +1,6 @@
 import React from "react";
 import { FaUserGraduate, FaMapMarkerAlt, FaGlobe, FaBirthdayCake } from 'react-icons/fa'; // Importing icons
-import AboutImage from "../assets/aboutme-image.png";
+import AboutImage from "../assets/hero-image.png";
 
 const About = () => {
   return (
