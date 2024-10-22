@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"; // For navigation
 import employeeMSImage from "../assets/employee-ms.png";
 import qr from "../assets/3bed.jpg";
-import travels from "../assets/travels.jpg";
+import travel from "../assets/ndt-services.jpg";
 
 const projects = [
   {
@@ -23,11 +23,11 @@ const projects = [
   },
   {
     id: 3,
-    name: "TRAVELS",
+    name: "Company Website",
     technologies: "REACT JS",
-    image: travels,
-    github: "https://github.com/Ruthrapathi-murugan/nakshatra-travels",
-    netlify: "https://nakshatra-travels.netlify.app/",
+    image: travel,
+    github: "https://github.com/Ruthrapathi-murugan/ultrawaves",
+    netlify: "https://ultrawavendtservices.netlify.app/"
   },
 ];
 

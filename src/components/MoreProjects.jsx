@@ -3,26 +3,35 @@ import { Link } from "react-router-dom";
 import project1Image from "../assets/blog.jpg";
 import project2Image from "../assets/calculator.jpeg";
 import qrc from "../assets/qr.png"
+import travels from "../assets/travels.jpg";
 
 const moreProjects = [
   {
     id: 4,
-    name: "Routing Project",
+    name: "Hotel Website",
     technologies: "React, Node.js",
+    image: travels,
+    github: "https://github.com/Ruthrapathi-murugan/nakshatra-travels",
+    netlify: "https://nakshatra-travels.netlify.app/",
+  },
+  {
+    id: 5,
+    name: "Routing Project",
+    technologies: "React",
     image: project1Image,
     github: "https://github.com/Ruthrapathi-murugan/react-router",
     netlify: "https://eloquent-queijadas-8063fc.netlify.app/",
   },
   {
-    id: 5,  
+    id: 6,  
     name: "Calculator",
-    technologies: "React, Express",
+    technologies: "Javascript",
     image: project2Image,
     github: "https://github.com/Ruthrapathi-murugan/calculator-task",
     netlify: "https://ruthracalculator.netlify.app/",
   },
   {
-    id: 6,  
+    id: 7,  
     name: "Qr code Generator",
     technologies: "React, Express",
     image: qrc,
