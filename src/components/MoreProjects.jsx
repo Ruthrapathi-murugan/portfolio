@@ -4,11 +4,12 @@ import project1Image from "../assets/blog.jpg";
 import project2Image from "../assets/calculator.jpeg";
 import qrc from "../assets/qr.png"
 import travels from "../assets/travels.jpg";
+import dei from "../assets/driving.jpg";
 
 const moreProjects = [
   {
     id: 4,
-    name: "Hotel Website",
+    name: "travels",
     technologies: "React, Node.js",
     image: travels,
     github: "https://github.com/Ruthrapathi-murugan/nakshatra-travels",
@@ -33,10 +34,18 @@ const moreProjects = [
   {
     id: 7,  
     name: "Qr code Generator",
-    technologies: "React, Express",
+    technologies: "javascript",
     image: qrc,
     github: "https://github.com/Ruthrapathi-murugan/QR-code-Generator",
     netlify: "https://qr-codegenerater.netlify.app/",
+  },
+  {
+    id: 8,  
+    name: "Driving school",
+    technologies: "React, Express",
+    image: dei,
+    github: "https://github.com/Ruthrapathi-murugan/nallu-driving-school",
+    netlify: "https://nalludrivingschool.netlify.app/",
   },
   // Add more projects here
 ];
