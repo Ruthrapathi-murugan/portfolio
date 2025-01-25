@@ -9,31 +9,47 @@ import Education from './components/Education.jsx';
 import ConnectMe from './components/ConnectMe.jsx';
 import Skills from './components/Skills.jsx';
 import MoreProjects from './components/MoreProjects.jsx';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+
+// Wrapper component to conditionally render the Navbar
+const Layout = ({ children }) => {
+  const location = useLocation();
+  
+  // Do not show Navbar on "/more-projects"
+  const hideNavbar = location.pathname === "/more-projects";
+
+  return (
+    <>
+      {!hideNavbar && <Navbar />}
+      {children}
+      <Footer />
+    </>
+  );
+};
 
 function App() {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-              <ConnectMe />
-              <Education />
-              <Skills />
-              <About />
-              <Service />
-              <Projects />
-              <Contact />
-            </>
-          }
-        />
-        <Route path="/more-projects" element={<MoreProjects />} />
-      </Routes>
-      <Footer />
+      <Layout>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <ConnectMe />
+                <Education />
+                <Skills />
+                <About />
+                <Service />
+                <Projects />
+                <Contact />
+              </>
+            }
+          />
+          <Route path="/more-projects" element={<MoreProjects />} />
+        </Routes>
+      </Layout>
     </Router>
   );
 }

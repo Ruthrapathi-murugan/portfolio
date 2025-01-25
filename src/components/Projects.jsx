@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"; // For navigation
 import employeeMSImage from "../assets/employee-ms.png";
 import qr from "../assets/3bed.jpg";
 import travel from "../assets/ndt-services.jpg";
+import Dma from "../assets/DMA logo.jpg";
 
 const projects = [
   {
@@ -19,7 +20,7 @@ const projects = [
     technologies: "REACT JS",
     image: qr,
     github: "https://github.com/Ruthrapathi-murugan/sampath-residency",
-    netlify: "https://sampathresidency.netlify.app/",
+    netlify: "https://sampathresidency-palani.netlify.app/",
   },
   {
     id: 3,
@@ -29,6 +30,7 @@ const projects = [
     github: "https://github.com/Ruthrapathi-murugan/ultrawaves",
     netlify: "https://ultrawavendtservices.netlify.app/"
   },
+
 ];
 
 const Projects = () => {
@@ -68,6 +70,40 @@ const Projects = () => {
             </div>
           ))}
         </div>
+      
+  {/* On Going Projects Section */}
+  <div className="mt-16" >
+          <h2 className="text-4xl font-bold text-center mb-12">On Going Projects</h2>
+          <div className="grid grid-cols-3   justify-center items-center">
+            <div className="bg-gray-800 p-6 rounded-lg hover:shadow-lg transform transition-transform duration-300 hover:scale-105">
+              <img
+                src={ Dma}
+                alt="Ongoing Project"
+                className="rounded-lg mb-4 w-full h-48 object-cover"
+              />
+              <h3 className="text-2xl font-bold mb-2">DMA Company</h3>
+              <p className="text-gray-400 mb-4">REACT JS</p>
+              <a
+                href="https://github.com/Ruthrapathi-murugan/gokul-websites"
+                className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full mr-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://enchanting-starship-1ff8a4.netlify.app/"
+                className="inline-block bg-gradient-to-r from-green-400 to-blue-500 text-white px-4 py-2 rounded-full"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Netlify
+              </a>
+            </div>
+          </div>
+        </div>
+
+        
 
         {/* More Projects Button */}
         <div className="text-center mt-12">
