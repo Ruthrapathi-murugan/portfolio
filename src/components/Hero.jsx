@@ -29,7 +29,7 @@ const Hero = () => {
           Contact With Me
         </a>
         <a
-          href="/assets/resume.pdf" // Replace this with the actual path to your resume
+          href="/assets/Resume for Ruthrapathi.pdf" // Replace this with the actual path to your resume
           target="_blank" // Opens the link in a new tab
           rel="noopener noreferrer" // Improves security
         >
