@@ -9,17 +9,17 @@ const ConnectMe = () => {
         <div className="flex justify-center space-x-8">
           {/* Facebook */}
           <a
-            href="https://www.facebook.com/ruthrapathi.m?mibextid=qi2Omg&rdid=uGGQcy74swtlCaq9&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FcnJMbDH8bdM3s31e%2F%3Fmibextid%3Dqi2Omg"
-            className="text-gray-400 hover:text-white text-3xl"
+            href="https://www.facebook.com/ruthrapathi.m"
+            className="text-[#1877F2] text-3xl transition-transform duration-300 hover:scale-110"
             aria-label="Facebook"
           >
             <FaFacebook />
           </a>
 
-          {/* Twitter */}
+          {/* Twitter (X) */}
           <a
-            href="https://x.com/i/flow/login?redirect_after_login=%2Fruthrapathi1"
-            className="text-gray-400 hover:text-white text-3xl"
+            href="https://x.com/ruthrapathi1"
+            className="text-[#1DA1F2] text-3xl transition-transform duration-300 hover:scale-110"
             aria-label="Twitter"
           >
             <FaTwitter />
@@ -28,7 +28,7 @@ const ConnectMe = () => {
           {/* LinkedIn */}
           <a
             href="https://www.linkedin.com/in/ruthrapathim/"
-            className="text-gray-400 hover:text-white text-3xl"
+            className="text-[#0A66C2] text-3xl transition-transform duration-300 hover:scale-110"
             aria-label="LinkedIn"
           >
             <FaLinkedin />
@@ -37,7 +37,7 @@ const ConnectMe = () => {
           {/* GitHub */}
           <a
             href="https://github.com/Ruthrapathi-murugan"
-            className="text-gray-400 hover:text-white text-3xl"
+            className="text-white text-3xl transition-transform duration-300 hover:scale-110"
             aria-label="GitHub"
           >
             <FaGithub />
@@ -45,8 +45,8 @@ const ConnectMe = () => {
 
           {/* WhatsApp */}
           <a
-            href="https://wa.me/+919626380310" // Replace 'yourphonenumber' with the actual phone number
-            className="text-gray-400 hover:text-white text-3xl"
+            href="https://wa.me/+919626380310"
+            className="text-[#25D366] text-3xl transition-transform duration-300 hover:scale-110"
             aria-label="WhatsApp"
           >
             <FaWhatsapp />
@@ -54,8 +54,8 @@ const ConnectMe = () => {
 
           {/* Phone */}
           <a
-            href="tel:+919626380310" // Replace with the actual phone number
-            className="text-gray-400 hover:text-white text-3xl"
+            href="tel:+919626380310"
+            className="text-[#FF6F00] text-3xl transition-transform duration-300 hover:scale-110"
             aria-label="Phone"
           >
             <FaPhoneAlt />
