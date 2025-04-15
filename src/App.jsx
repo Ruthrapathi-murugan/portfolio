@@ -10,6 +10,7 @@ import ConnectMe from './components/ConnectMe.jsx';
 import Skills from './components/Skills.jsx';
 import MoreProjects from './components/MoreProjects.jsx';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import Experience from './components/Experience.jsx';
 
 // Wrapper component to conditionally render the Navbar
 const Layout = ({ children }) => {
@@ -39,6 +40,7 @@ function App() {
                 <Hero />
                 <ConnectMe />
                 <Education />
+                <Experience/>
                 <Skills />
                 <About />
                 <Service />
