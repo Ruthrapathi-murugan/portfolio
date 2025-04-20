@@ -18,14 +18,7 @@ const experienceDetails = [
     description: "Collaborated on AI-powered web applications, focused on integrating machine learning models into web platforms.",
     icon: <FaBriefcase className="text-purple-500 text-3xl" /> // Briefcase icon
   },
-  {
-    id: 3,
-    role: "Full Stack Developer Intern",
-    company: "Hoop Technologies, Mumbai",
-    duration: "2025-04-01 (current)",
-    description: "Developed user-friendly interfaces and enhanced backend functionality for internal tools.",
-    icon: <FaRegBuilding className="text-teal-500 text-3xl" /> // Building icon
-  },
+  
   // Add more experience details as needed
 ];
 
