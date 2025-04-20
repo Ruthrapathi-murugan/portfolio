@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUniversity, FaBook, FaLaptopCode } from "react-icons/fa"; // Import relevant icons
+import { FaUniversity, FaBook, FaLaptopCode } from "react-icons/fa";
 
 const educationDetails = [
   {
@@ -10,7 +10,7 @@ const educationDetails = [
     year: "2011 - 2014",
     Marks: "60%",
     description: "Specialized in software development and system design.",
-    icon: <FaUniversity className="text-indigo-500 text-3xl" /> // University icon
+    icon: <FaUniversity className="text-pink-500 text-4xl drop-shadow-lg" />
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const educationDetails = [
     year: "2008 - 2011",
     Marks: "75%",
     description: "Studied core concepts of computer science and programming.",
-    icon: <FaBook className="text-green-500 text-3xl" /> // Diploma icon
+    icon: <FaBook className="text-cyan-400 text-4xl drop-shadow-lg" />
   },
   {
     id: 3,
@@ -28,41 +28,35 @@ const educationDetails = [
     institution: "Guvi Geek Technology, Chennai",
     year: "2024",
     description: "Completed an intensive bootcamp focusing on full-stack web development.",
-    icon: <FaLaptopCode className="text-blue-500 text-3xl" /> // Coding/Full Stack icon
+    icon: <FaLaptopCode className="text-emerald-400 text-4xl drop-shadow-lg" />
   },
-  // Add more education details as needed
 ];
 
 const Education = () => {
   return (
-    <div className="bg-black text-white py-20" id="education">
+    <div className="bg-gradient-to-br from-black via-gray-900 to-black py-20 font-[Poppins]">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
-        <h2 className="text-4xl font-bold text-center mb-12">My Education</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="text-5xl font-bold text-center text-white mb-16 tracking-wide">
+          🎓 My <span className="text-gradient bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">Education</span>
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {educationDetails.map((education) => (
             <div
               key={education.id}
-              className="bg-gray-800 px-6 pb-6 rounded-lg hover:shadow-lg transform 
-              transition-transform duration-300 hover:scale-105"
+              className="rounded-2xl p-6 bg-gray-900/70 backdrop-blur-lg border border-gray-700 shadow-2xl hover:scale-[1.05] transition-all duration-500 hover:shadow-cyan-500/40"
             >
-              <div className="flex justify-between items-center mb-4">
-                <div
-                  className="text-2xl font-bold text-transparent bg-clip-text 
-                bg-gradient-to-r from-green-600 to-blue-400"
-                >
-                  {education.id}
-                </div>
-                <div>{education.icon}</div> {/* Icon for each category */}
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-3xl font-bold text-cyan-300 drop-shadow-lg">{education.id}</span>
+                {education.icon}
               </div>
-              <h3 className="mt-2 text-2xl font-bold text-transparent bg-clip-text 
-              bg-gradient-to-r from-green-400 to-blue-500">
+              <h3 className="text-2xl font-extrabold mb-2 bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text">
                 {education.degree}
               </h3>
-              <p className="mt-2 text-gray-300">{education.institution}</p>
-              {education.College && <p className="mt-2 text-gray-300">{education.College}</p>}
-              <p className="mt-1 text-gray-400">Year: {education.year}</p>
-              {education.Marks && <p className="mt-1 text-gray-400">Marks: {education.Marks}</p>}
-              <p className="mt-2 text-gray-300">{education.description}</p>
+              <p className="text-gray-300 text-sm">{education.institution}</p>
+              {education.College && <p className="text-gray-400 text-sm">{education.College}</p>}
+              <p className="text-gray-500 text-sm mt-2">📅 {education.year}</p>
+              {education.Marks && <p className="text-gray-500 text-sm">🎯 Marks: {education.Marks}</p>}
+              <p className="text-gray-300 text-[15px] mt-3">{education.description}</p>
             </div>
           ))}
         </div>
