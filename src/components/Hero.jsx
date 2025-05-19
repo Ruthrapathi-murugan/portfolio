@@ -37,7 +37,7 @@ const Hero = () => {
         </a>
 
         <a
-          href="/assets/Resume for Ruthrapathi-2025.pdf"
+          href="/assets/Ruthrapathi Murugan-resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

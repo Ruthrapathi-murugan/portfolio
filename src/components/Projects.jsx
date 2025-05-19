@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import employeeMSImage from "../assets/employee-ms.png";
 import qr from "../assets/3bed.jpg";
+import mesklintech from "../assets/mesklintech.jpeg";
 import travel from "../assets/ndt-services.jpg";
 import Dma from "../assets/DMA logo.jpg";
 
@@ -22,10 +23,10 @@ const projects = [
   },
   {
     id: 3,
-    name: "ULTRAWAVE NDT SERVICES",
+    name: "Mesklintech",
     technologies: "React JS",
-    image: travel,
-    netlify: "https://ultrawavendtservices.netlify.app/",
+    image: mesklintech,
+    netlify: "https://mesklintech.netlify.app/",
   },
 ];
 

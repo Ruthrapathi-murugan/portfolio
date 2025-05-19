@@ -5,6 +5,7 @@ import project2Image from "../assets/calculator.jpeg";
 import qrc from "../assets/qr.png";
 import travels from "../assets/travels.jpg";
 import dei from "../assets/driving.jpg";
+import travel from "../assets/ndt-services.jpg";
 
 const moreProjects = [
   {
@@ -42,6 +43,13 @@ const moreProjects = [
     image: dei,
     netlify: "https://nalludrivingschool.netlify.app/",
   },
+  {
+   id: 9,
+    name: "ULTRAWAVE NDT SERVICES",
+    technologies: "React JS",
+    image: travel,
+    netlify: "https://ultrawavendtservices.netlify.app/",
+}
 ];
 
 const MoreProjects = () => {
