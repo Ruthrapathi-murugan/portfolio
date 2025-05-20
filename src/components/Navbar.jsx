@@ -6,7 +6,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-black via-gray-800 to-black text-white px-6 md:px-16 lg:px-24 shadow-lg ">
+    <nav className="sticky top-0 z-50 bg-gradient-to-r from-black via-gray-800 to-black text-white px-6 md:px-16 lg:px-24 shadow-lg">
+
       <div className="container py-4 flex justify-between items-center">
         
         {/* Logo */}
@@ -22,7 +23,7 @@ const Navbar = () => {
             { name: "My Skills", to: "skills" },
             { name: "About Me", to: "about" },
             { name: "Services", to: "service" },
-            { name: "Projects", to: "project" },
+            { name: "Projects", to: "Projects" },
             { name: "Contact", to: "contact" },
           ].map((item, index) => (
             <Link
@@ -75,7 +76,7 @@ const Navbar = () => {
             { name: "My Skills", to: "skills" },
             { name: "About Me", to: "about" },
             { name: "Services", to: "service" },
-            { name: "Projects", to: "project" },
+           {name: "Projects", to: "Projects"},
             { name: "Contact", to: "contact" },
           ].map((item, index) => (
             <Link

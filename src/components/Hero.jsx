@@ -3,7 +3,7 @@ import HeroImage from '../assets/hero-image.png';
 
 const Hero = () => {
   return (
-    <div className='bg-gradient-to-b from-black via-gray-900 to-black text-white text-center py-16'>
+    <div id="home" className='bg-gradient-to-b from-black via-gray-900 to-black text-white text-center py-16'>
       <img 
         src={HeroImage} 
         alt="Profile" 

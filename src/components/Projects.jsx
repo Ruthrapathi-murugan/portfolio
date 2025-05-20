@@ -6,7 +6,7 @@ import mesklintech from "../assets/mesklintech.jpeg";
 import travel from "../assets/ndt-services.jpg";
 import Dma from "../assets/DMA logo.jpg";
 
-const projects = [
+const projectsdetails = [
   {
     id: 1,
     name: "Employee MS",
@@ -42,14 +42,14 @@ const ongoingProjects = [
 
 const Projects = () => {
   return (
-    <div className="bg-gradient-to-br from-black via-gray-900 to-black py-20 font-[Poppins]">
+    <div id="Projects" className="bg-gradient-to-br from-black via-gray-900 to-black py-20 font-[Poppins]">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-5xl font-extrabold text-center mb-16 bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">
           🚀 My Projects
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {projects.map((project) => (
+          {projectsdetails.map((project) => (
             <div
               key={project.id}
               className="rounded-2xl p-4 bg-gray-900/70 backdrop-blur-lg border border-gray-700 shadow-xl hover:scale-[1.05] transition duration-500 hover:shadow-cyan-500/30 cursor-pointer hover:-translate-y-2"

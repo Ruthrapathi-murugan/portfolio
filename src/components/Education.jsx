@@ -34,7 +34,7 @@ const educationDetails = [
 
 const Education = () => {
   return (
-    <div className="bg-gradient-to-br from-black via-gray-900 to-black py-20 font-[Poppins]">
+    <div id="education" className="bg-gradient-to-br from-black via-gray-900 to-black py-20 font-[Poppins]">
       <div className="container mx-auto px-8 md:px-16 lg:px-24">
         <h2 className="text-5xl font-bold text-center text-white mb-16 tracking-wide">
           🎓 My <span className="text-gradient bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">Education</span>
