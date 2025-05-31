@@ -56,7 +56,7 @@ const skillsData = [
   {
     title: "Cloud Infrastructure",
     icon: FaCloud,
-    items: ["AWS S3"],
+    items: ["AWS S3","AWS EC2"],
   },
   {
     title: "Programming Languages",
