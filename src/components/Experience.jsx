@@ -2,17 +2,9 @@ import React from "react";
 import { FaRegBuilding, FaBriefcase, FaLaptopCode } from "react-icons/fa";
 
 const experienceDetails = [
+ 
   {
     id: 1,
-    role: "Full Stack Developer Intern",
-    company: "Guvi Geek Technology, Chennai",
-    duration: "2024-04-01 (3 months)",
-    description: "Worked on real-time web applications and gained hands-on experience with the MERN stack.",
-    icon: <FaLaptopCode className="text-blue-500 text-3xl" />,
-    website: "https://www.guvi.in"
-  },
-  {
-    id: 2,
     role: "Full Stack Developer Intern",
     company: "BrainVoice.ai, Chennai",
     duration: "2025-01-01 (3 months)",
@@ -21,14 +13,26 @@ const experienceDetails = [
     website: "https://www.brainvoiceai.com/"
   },
   {
-    id: 3,
+    id: 2,
     role: "Software Development Engineer",
     company: "MesklinTech, Mumbai",
     duration: "2025-04-01 (3 months)",
     description: "Focused on frontend development and UI/UX design using Figma and React. Contributed to building scalable interfaces with clean user experience.",
     icon: <FaBriefcase className="text-purple-500 text-3xl" />,
     website: "https://www.mesklintech.com" // Replace with actual website if available
-  }
+  },
+ {
+  id: 3,
+  role: "Associate Software Engineer",
+  company: "Just Creative Designs, Bangalore",
+  duration: "July 2025 – Present",
+  description:
+    "Built and optimized real-time web applications using Next.js, enhancing performance and scalability while gaining hands-on experience with modern full-stack development.",
+  icon: <FaLaptopCode className="text-blue-500 text-3xl" />,
+  website: "https://www.jcdinterior.com",
+},
+
+
 ];
 
 const Experience = () => {
