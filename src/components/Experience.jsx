@@ -7,7 +7,7 @@ const experienceDetails = [
     id: 1,
     role: "Full Stack Developer Intern",
     company: "BrainVoice.ai, Chennai",
-    duration: "2025-01-01 (3 months)",
+    duration: "2024-01-01 (1 years 3 months)",
     description: "Collaborated on AI-powered web applications, focused on integrating machine learning models into web platforms.",
     icon: <FaBriefcase className="text-purple-500 text-3xl" />,
     website: "https://www.brainvoiceai.com/"
