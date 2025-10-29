@@ -9,19 +9,14 @@ import Education from './components/Education.jsx';
 import ConnectMe from './components/ConnectMe.jsx';
 import Skills from './components/Skills.jsx';
 import MoreProjects from './components/MoreProjects.jsx';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Experience from './components/Experience.jsx';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-// Wrapper component to conditionally render the Navbar
+// ✅ Always show Navbar & Footer
 const Layout = ({ children }) => {
-  const location = useLocation();
-  
-  // Do not show Navbar on "/more-projects"
-  const hideNavbar = location.pathname === "/more-projects";
-
   return (
     <>
-      {!hideNavbar && <Navbar />}
+      <Navbar />
       {children}
       <Footer />
     </>
@@ -40,7 +35,7 @@ function App() {
                 <Hero />
                 <ConnectMe />
                 <Education />
-                <Experience/>
+                <Experience />
                 <Skills />
                 <About />
                 <Service />
@@ -49,6 +44,7 @@ function App() {
               </>
             }
           />
+          {/* ✅ More Projects now includes Navbar & Footer too */}
           <Route path="/more-projects" element={<MoreProjects />} />
         </Routes>
       </Layout>

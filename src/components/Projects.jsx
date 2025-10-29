@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import employeeMSImage from "../assets/employee-ms.png";
 import qr from "../assets/3bed.jpg";
+import jcd from "../assets/Slider3.jpg";
 import mesklintech from "../assets/mesklintech.jpeg";
 import travel from "../assets/ndt-services.jpg";
 import Dma from "../assets/DMA logo.jpg";
@@ -31,8 +32,16 @@ const projectsdetails = [
 ];
 
 const ongoingProjects = [
+  
   {
     id: 1,
+    name: "Just Creative Designs",
+    technologies: "React JS",
+    image: jcd,
+    netlify: "https://www.jcdinterior.com/",
+  },
+  {
+    id: 2,
     name: "DMA Company",
     technologies: "React JS",
     image: Dma,
