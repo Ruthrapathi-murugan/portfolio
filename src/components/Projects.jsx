@@ -36,7 +36,7 @@ const ongoingProjects = [
   {
     id: 1,
     name: "Just Creative Designs",
-    technologies: "React JS",
+    technologies: "Next.js",
     image: jcd,
     netlify: "https://www.jcdinterior.com/",
   },
